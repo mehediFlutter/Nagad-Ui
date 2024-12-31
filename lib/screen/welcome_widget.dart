@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../widget/language_change_togle.dart';
+
 class WelcomeWidget extends StatefulWidget {
   const WelcomeWidget({super.key});
 
@@ -15,11 +17,19 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
       body: SafeArea(
         child: SizedBox(
           width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              SvgPicture.asset('assets/images/nagad.svg')
-            ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: LanguageChangeTogle(),
+                ),
+                SvgPicture.asset('assets/images/nagad.svg'),
+                Text("Welcome",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
+              ],
+            ),
           ),
         ),
       ),
