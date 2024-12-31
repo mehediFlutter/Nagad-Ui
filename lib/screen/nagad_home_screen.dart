@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nagad_ui/screen/welcome_widget.dart';
 
 class NagadHomeScreen extends StatefulWidget {
   const NagadHomeScreen({super.key});
@@ -10,6 +11,6 @@ class NagadHomeScreen extends StatefulWidget {
 class _NagadHomeScreenState extends State<NagadHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return WelcomeWidget();
   }
 }
