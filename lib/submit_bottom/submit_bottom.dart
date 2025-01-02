@@ -6,12 +6,18 @@ class SubmitBottom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width:240,
-      height: 40,
-      child: ElevatedButton(
-        onPressed: onPressed(),
-        child: Text("Submit"),
+    return InkWell(
+      onTap: () {
+        print("Print Submit button pressed");
+      },
+      child: Container(
+        width: 240,
+        height: 40,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: Theme.of(context).primaryColor),
+        ),
+        child: Center(child: Text("Submit")),
       ),
     );
   }

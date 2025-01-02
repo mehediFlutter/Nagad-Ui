@@ -7,14 +7,15 @@ import 'package:nagad_ui/widget/const.dart';
 
 import '../widget/language_change_togle.dart';
 
-class WelcomeWidget extends StatefulWidget {
-  const WelcomeWidget({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<WelcomeWidget> createState() => _WelcomeWidgetState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _WelcomeWidgetState extends State<WelcomeWidget> {
+class _LoginScreenState extends State<LoginScreen> {
+  TextEditingController phoneNumberController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +29,7 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
               children: [
                 Align(
                   alignment: Alignment.topRight,
-                  child: LanguageChangeTogle(),
+                  child: LanguageChangeToggle(),
                 ),
                 SvgPicture.asset('assets/images/nagad.svg'),
                 height10,
@@ -42,17 +43,27 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                       'assets/icons/telephone_1.svg',
                     ),
                     width10,
-                    LoginAndRegistrationTextField(),
+                    LoginAndRegistrationTextField(
+                        controller: phoneNumberController),
                   ],
                 ),
-
-               SubmitBottom(
-                 onPressed: () {
-                   if (kDebugMode) {
-                     print("Submit button pressed");
-                   }
-                 },
-               ),
+                height10,
+                SubmitBottom(
+                  onPressed: () {
+                    if (kDebugMode) {
+                      print("Submit button pressed");
+                    }
+                  },
+                ),
+                height10,
+                InkWell(
+                  onTap: () {
+                    print("Not registered yet?");
+                  },
+                  child: Text("No registered yet?",
+                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                          color: const Color.fromARGB(255, 105, 102, 102))),
+                ),
               ],
             ),
           ),
@@ -61,4 +72,3 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
     );
   }
 }
-

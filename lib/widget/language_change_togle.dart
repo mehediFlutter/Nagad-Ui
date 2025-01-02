@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LanguageChangeTogle extends StatelessWidget {
-  const LanguageChangeTogle({super.key});
+class LanguageChangeToggle extends StatelessWidget {
+  const LanguageChangeToggle({super.key});
 
   @override
   Widget build(BuildContext context) {

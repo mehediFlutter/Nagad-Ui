@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class LoginAndRegistrationTextField extends StatelessWidget {
+  final TextEditingController controller;
   const LoginAndRegistrationTextField({
-    super.key,
+    super.key, required this.controller,
   });
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: TextFormField(
+        controller: controller,
         style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),
         keyboardType: TextInputType.phone,
         decoration: InputDecoration(
