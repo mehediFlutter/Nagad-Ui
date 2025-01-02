@@ -6,6 +6,7 @@ import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 import 'package:nagad_ui/widget/const.dart';
 
 import '../../../widget/language_change_togle.dart';
+import '../registration_screen/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -63,7 +64,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                         color: const Color.fromARGB(255, 105, 102, 102))),
                 height5,
-                Text("Register Now",style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
+                InkWell(
+                    onTap: () {
+                      Navigator.pushAndRemoveUntil(context,
+                          MaterialPageRoute(builder: (context) {
+                        return RegistrationScreen();
+                      }), (route) => false);
+                    },
+                    child: Text("Register Now",
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                            color: Theme.of(context).primaryColor,
+                            fontWeight: FontWeight.bold))),
               ],
             ),
           ),
