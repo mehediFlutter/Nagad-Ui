@@ -1,5 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:nagad_ui/screen/auth/login_registration_text_field.dart';
+import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 import 'package:nagad_ui/widget/const.dart';
 
 import '../widget/language_change_togle.dart';
@@ -39,27 +42,17 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
                       'assets/icons/telephone_1.svg',
                     ),
                     width10,
-                    Expanded(
-                      child: TextFormField(
-                        style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),
-                        keyboardType: TextInputType.phone,
-                        decoration: InputDecoration(
-                          border: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: Theme.of(context).primaryColor),
-                          ),
-                          enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xFFD0D5DD)),
-                          ),
-                          focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                                color: Theme.of(context).primaryColor),
-                          ),
-                        ),
-                      ),
-                    ),
+                    LoginAndRegistrationTextField(),
                   ],
                 ),
+
+               SubmitBottom(
+                 onPressed: () {
+                   if (kDebugMode) {
+                     print("Submit button pressed");
+                   }
+                 },
+               ),
               ],
             ),
           ),
@@ -68,3 +61,4 @@ class _WelcomeWidgetState extends State<WelcomeWidget> {
     );
   }
 }
+
