@@ -1,11 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nagad_ui/screen/auth/login_registration_text_field.dart';
+import 'package:nagad_ui/screen/auth/login_scren/login_registration_text_field.dart';
 import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 import 'package:nagad_ui/widget/const.dart';
 
-import '../widget/language_change_togle.dart';
+import '../../../widget/language_change_togle.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -48,6 +48,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
                 height10,
+                height10,
+                height10,
                 SubmitBottom(
                   onPressed: () {
                     if (kDebugMode) {
@@ -56,14 +58,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   },
                 ),
                 height10,
-                InkWell(
-                  onTap: () {
-                    print("Not registered yet?");
-                  },
-                  child: Text("No registered yet?",
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                          color: const Color.fromARGB(255, 105, 102, 102))),
-                ),
+                height10,
+                Text("No registered yet?",
+                    style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        color: const Color.fromARGB(255, 105, 102, 102))),
+                height5,
+                Text("Register Now",style: Theme.of(context).textTheme.bodyMedium!.copyWith(color: Theme.of(context).primaryColor,fontWeight: FontWeight.bold)),
               ],
             ),
           ),

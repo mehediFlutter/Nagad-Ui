@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nagad_ui/screen/login_screen.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:nagad_ui/screen/auth/login_scren/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   splashMethod() async {
-    await Future.delayed(Duration(seconds: 30));
+    await Future.delayed(Duration(seconds: 3));
     if (mounted) {
       Navigator.pushAndRemoveUntil(
           context,
@@ -18,6 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
           (route) => false);
     }
   }
+
   @override
   void initState() {
     super.initState();
@@ -29,8 +31,9 @@ class _SplashScreenState extends State<SplashScreen> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.redAccent,
-        
-        
+        body: Center(
+          child: SvgPicture.asset('assets/images/splash_screen_nagad.svg'),
+        ),
       ),
     );
   }
