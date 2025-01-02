@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class SubmitBottom extends StatelessWidget {
   final Function onPressed;
-  const SubmitBottom({super.key, required this.onPressed});
+  final String text;
+  const SubmitBottom({super.key, required this.onPressed, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class SubmitBottom extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Theme.of(context).primaryColor),
         ),
-        child: Center(child: Text("Submit")),
+        child: Center(child: Text(text)),
       ),
     );
   }

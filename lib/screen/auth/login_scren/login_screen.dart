@@ -45,7 +45,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     width10,
                     LoginAndRegistrationTextField(
-                        controller: phoneNumberController),
+                        controller: phoneNumberController,
+                        labelText: "Phone Number"),
                   ],
                 ),
                 height10,
@@ -57,6 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       print("Submit button pressed");
                     }
                   },
+                  text: "Submit",
                 ),
                 height10,
                 height10,
