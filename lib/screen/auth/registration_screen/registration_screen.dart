@@ -1,12 +1,11 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nagad_ui/screen/auth/login_scren/login_screen.dart';
+import 'package:nagad_ui/screen/auth/login_screen/login_screen.dart';
 import 'package:nagad_ui/screen/auth/mobile_operator_screen/mobile_operator_screen.dart';
 
 import '../../../submit_bottom/submit_bottom.dart';
 import '../../../widget/const.dart';
-import '../login_scren/login_registration_text_field.dart';
+import '../login_screen/login_registration_text_field.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -28,8 +27,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-             height25,
-             height25,
+              height25,
+              height25,
               SvgPicture.asset('assets/images/registration_nogod.svg'),
               height10,
               Text("Create an Account",
@@ -53,9 +52,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               height5,
               SubmitBottom(
                 onPressed: () {
-                  if (kDebugMode) {
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MobileOperatorScreen()));
-                  }
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => MobileOperatorScreen()));
                 },
                 text: "NEXT",
               ),

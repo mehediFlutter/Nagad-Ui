@@ -9,8 +9,13 @@ class SubmitBottom extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        print("Print Submit button pressed");
+        onPressed();
       },
+      borderRadius:
+          BorderRadius.circular(20), // Apply rounded corners for ripple effect
+      splashColor: Theme.of(context)
+          .primaryColor
+          .withAlpha(77), // Optional: Customize ripple color
       child: Container(
         width: 240,
         height: 40,
@@ -18,7 +23,9 @@ class SubmitBottom extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Theme.of(context).primaryColor),
         ),
-        child: Center(child: Text(text)),
+        child: Center(
+          child: Text(text),
+        ),
       ),
     );
   }
