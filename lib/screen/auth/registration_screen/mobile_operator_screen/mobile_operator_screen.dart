@@ -5,6 +5,7 @@ import 'package:nagad_ui/app_bar/custom_app_bar.dart';
 import 'package:nagad_ui/widget/const.dart';
 
 import '../../../../submit_bottom/submit_bottom.dart';
+import '../account_type/account_type.dart';
 
 class MobileOperatorScreen extends StatefulWidget {
   const MobileOperatorScreen({super.key});
@@ -111,11 +112,13 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
                     ),
                   ),
                 ),
-                SubmitBottom(
+               SubmitBottom(
                   isEnable: selectedIndex != null,
                   onPressed: () {
-                    if (kDebugMode) {
-                      print("Submit button pressed");
+                    if(selectedIndex != null)
+                    {Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>AccountType()), (route)=>false);}
+                    else{
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Please select a mobile operator")));
                     }
                   },
                   text: "Next",
