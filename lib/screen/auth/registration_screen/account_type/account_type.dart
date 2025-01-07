@@ -75,7 +75,14 @@ class _AccountTypeState extends State<AccountType> {
                                   });
                                 },
                               ),
-                              Text(accountType[index]),
+                              Text(accountType[index], style: Theme.of(context)
+                                      .textTheme
+                                      .titleMedium!
+                                      .copyWith(
+                                          color:  selectedAccountType == accountType[index]
+                                              ? Theme.of(context).primaryColor
+                                              : Colors.black,
+                                          fontWeight: FontWeight.bold),),
                             ],
                           ),
                           const SizedBox(),

@@ -4,11 +4,12 @@ class SubmitBottom extends StatelessWidget {
   final Function onPressed;
   final String text;
   final bool? isEnable;
+  final bool isWidthInfinity;
   const SubmitBottom(
       {super.key,
       required this.onPressed,
       required this.text,
-      this.isEnable = false});
+      this.isEnable = false, this.isWidthInfinity = false});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class SubmitBottom extends StatelessWidget {
           .primaryColor
           .withAlpha(77), // Optional: Customize ripple color
       child: Container(
-        width: 240,
+        width:isWidthInfinity?double.infinity: 240,
         height: 40,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),

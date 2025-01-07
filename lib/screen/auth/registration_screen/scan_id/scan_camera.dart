@@ -12,7 +12,7 @@ class ScanCamera extends StatelessWidget {
       bottom: 0,
       right: 30,
       child: Container(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(12),
         height: 50,
         width: 50,
         decoration: BoxDecoration(

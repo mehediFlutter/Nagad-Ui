@@ -4,6 +4,7 @@ import 'package:nagad_ui/app_bar/custom_app_bar.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_camera.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_id_line.dart';
 
+import '../../../../submit_bottom/submit_bottom.dart';
 import '../../../../widget/const.dart';
 
 class ScanIdScreen extends StatefulWidget {
@@ -36,7 +37,7 @@ class _ScanIdScreenState extends State<ScanIdScreen> {
               "Scan the front side of NID card with camera",
               style: Theme.of(context)
                   .textTheme
-                  .bodySmall!
+                  .titleSmall!
                   .copyWith(color: Colors.grey),
             ),
             height15,
@@ -59,14 +60,11 @@ class _ScanIdScreenState extends State<ScanIdScreen> {
                                   topRight: Radius.circular(10)),
                               color: Color(0xFFE5E5E5)),
                         ),
+                        height25,
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Icon(
-                              Icons.person,
-                              size: 120,
-                              color: scanContainerItem,
-                            ),
+                            SvgPicture.asset('assets/images/scan_person.svg'),
                             Column(
                               children: [
                                 ScanIdLine(width: 106),
@@ -85,6 +83,71 @@ class _ScanIdScreenState extends State<ScanIdScreen> {
                 ScanCamera(),
               ],
             ),
+           height15,
+            Text(
+              "Scan the back side of NID card with camera",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .copyWith(color: Colors.grey),
+            ),
+            height25,
+
+            // scan back side of nid card
+            Stack(
+              children: [
+                Container(
+                  height: 183,
+                  width: double.infinity,
+                  margin: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Color(0xFFF3F3F3),
+                  ),
+                  child: Column(
+                    children: [
+                      height10,
+                      Container(
+                        height: 38,
+                        width: double.infinity,
+                        color: scanContainerItem,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Column(
+                            children: [
+                              height15,
+                              ScanIdLine(width: 125),
+                              height15,
+                              ScanIdLine(width: 106),
+                              height15,
+                              ScanIdLine(width: 115),
+                              height15,
+                              ScanIdLine(width: 80),
+                              height15,
+                            ],
+                          ),
+                          SvgPicture.asset('assets/images/scan_person.svg',width: 50,),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+            ScanCamera(),
+              ],
+            ),
+
+          Expanded(child: SizedBox()),
+            SubmitBottom(
+              isWidthInfinity: true,
+              isEnable: true,
+              onPressed: () {
+         
+              },
+              text: "NEXT",
+            ),
+            height10,
           ],
         ),
       ),

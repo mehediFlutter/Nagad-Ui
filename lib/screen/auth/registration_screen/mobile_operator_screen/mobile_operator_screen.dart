@@ -27,10 +27,10 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(title: "Register"),
-      body: SafeArea(
-        child: SizedBox(
+    return SafeArea(
+      child: Scaffold(
+        appBar: CustomAppBar(title: "Register"),
+        body: SizedBox(
           width: double.infinity,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
@@ -116,7 +116,7 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
                   isEnable: selectedIndex != null,
                   onPressed: () {
                     if(selectedIndex != null)
-                    {Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>AccountType()), (route)=>false);}
+                    {Navigator.push(context, MaterialPageRoute(builder: (context)=>AccountType()));}
                     else{
                       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Please select a mobile operator")));
                     }

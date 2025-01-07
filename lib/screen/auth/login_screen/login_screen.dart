@@ -68,10 +68,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 height5,
                 InkWell(
                     onTap: () {
-                      Navigator.pushAndRemoveUntil(context,
+                      Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
                         return RegistrationScreen();
-                      }), (route) => false);
+                      }));
                     },
                     child: Text("Register Now",
                         style: Theme.of(context).textTheme.bodyMedium!.copyWith(
