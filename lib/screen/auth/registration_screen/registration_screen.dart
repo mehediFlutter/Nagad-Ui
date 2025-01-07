@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nagad_ui/screen/auth/login_screen/login_screen.dart';
-import 'package:nagad_ui/screen/auth/mobile_operator_screen/mobile_operator_screen.dart';
+import 'package:nagad_ui/screen/auth/registration_screen/mobile_operator_screen/mobile_operator_screen.dart';
 
 import '../../../submit_bottom/submit_bottom.dart';
 import '../../../widget/const.dart';

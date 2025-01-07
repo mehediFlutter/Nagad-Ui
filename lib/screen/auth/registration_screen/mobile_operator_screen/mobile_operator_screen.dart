@@ -1,7 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:nagad_ui/app_bar/custom_app_bar.dart';
 import 'package:nagad_ui/widget/const.dart';
+
+import '../../../../submit_bottom/submit_bottom.dart';
 
 class MobileOperatorScreen extends StatefulWidget {
   const MobileOperatorScreen({super.key});
@@ -19,11 +22,12 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
     'Airtel',
     'Banglalink'
   ];
-    int? selectedIndex;
+  int? selectedIndex;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar(title: "Register"),
       body: SafeArea(
         child: SizedBox(
           width: double.infinity,
@@ -63,9 +67,9 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
                               setState(() {
                                 selectedIndex = index;
                               });
-                       if (kDebugMode) {
-                         print(selectedIndex);
-                       }
+                              if (kDebugMode) {
+                                print(selectedIndex);
+                              }
                             },
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -77,20 +81,27 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
                                       border: Border.all(
-                                          color: Theme.of(context).primaryColor),
-                                  color: selectedIndex == index
-                                      ? Theme.of(context).primaryColor
-                                      : null,
-                                   ),
-                                    child:selectedIndex==index? Icon(Icons.check,
-                                        color: Colors.white, size: 15):null),
+                                          color:
+                                              Theme.of(context).primaryColor),
+                                      color: selectedIndex == index
+                                          ? Theme.of(context).primaryColor
+                                          : null,
+                                    ),
+                                    child: selectedIndex == index
+                                        ? Icon(Icons.check,
+                                            color: Colors.white, size: 15)
+                                        : null),
                                 width10,
                                 Text(
                                   mobileOperators[index],
-                                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                                      color: selectedIndex == index
-                                          ? Theme.of(context).primaryColor
-                                          : Colors.black,fontWeight: FontWeight.bold),
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .titleMedium!
+                                      .copyWith(
+                                          color: selectedIndex == index
+                                              ? Theme.of(context).primaryColor
+                                              : Colors.black,
+                                          fontWeight: FontWeight.bold),
                                 ),
                               ],
                             ),
@@ -100,6 +111,16 @@ class _MobileOperatorScreenState extends State<MobileOperatorScreen> {
                     ),
                   ),
                 ),
+                SubmitBottom(
+                  isEnable: selectedIndex != null,
+                  onPressed: () {
+                    if (kDebugMode) {
+                      print("Submit button pressed");
+                    }
+                  },
+                  text: "Next",
+                ),
+                Expanded(child: const SizedBox()),
               ],
             ),
           ),
