@@ -7,7 +7,7 @@ class AccountType extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
-      appBar: CustomAppBar(title: 'Account Type'),
+      appBar: CustomAppBar(title: 'Account Typee'),
     ));
   }
 }
