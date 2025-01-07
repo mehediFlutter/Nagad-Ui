@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nagad_ui/app_bar/custom_app_bar.dart';
+import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_camera.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_id_line.dart';
 
 import '../../../../widget/const.dart';
@@ -88,28 +89,5 @@ class _ScanIdScreenState extends State<ScanIdScreen> {
         ),
       ),
     ));
-  }
-}
-
-class ScanCamera extends StatelessWidget {
-  const ScanCamera({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Positioned(
-      bottom: 0,
-      right: 30,
-      child: Container(
-        padding: EdgeInsets.all(10),
-        height: 50,
-        width: 50,
-        decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            shape: BoxShape.circle),
-            child: SvgPicture.asset('assets/icons/camera.svg'),
-      ),
-    );
   }
 }
