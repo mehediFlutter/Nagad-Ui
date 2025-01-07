@@ -18,3 +18,6 @@ const width30 = SizedBox(width: 30);
 
 // const account type
      List<String> accountType = ['Regular', 'Islamic'];
+
+     // scan id container main color
+      const Color scanContainerItem = Color(0xFFD9D9D9);

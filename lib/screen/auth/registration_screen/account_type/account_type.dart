@@ -6,6 +6,7 @@ import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 
 import '../../../../widget/const.dart';
 import '../../../../widget/snack_bar/custom_snack_bar.dart';
+import '../scan_id/scan_id_screen.dart';
 
 class AccountType extends StatefulWidget {
   const AccountType({super.key});
@@ -89,7 +90,7 @@ class _AccountTypeState extends State<AccountType> {
                 onPressed: () {
                   if (selectedAccountType != null) {
                     if (kDebugMode) {
-                      print("Please select account type");
+                 Navigator.push(context, MaterialPageRoute(builder: (context)=>ScanIdScreen()));
                     }
                   } else {
                     _showSnackBar('Please select account type');
