@@ -38,6 +38,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                             fontWeight: FontWeight.bold,
                           )),
+                          height30,
                   Row(
                     children: [
                       SvgPicture.asset(
@@ -50,8 +51,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       ),
                     ],
                   ),
-                  height10,
-                  height10,
+                  height30,
                   height5,
                   SubmitBottom(
                     onPressed: () {

@@ -14,9 +14,7 @@ class LanguageChangeToggle extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Expanded(child: Container(
-           child: Center(child: Text("বাং",style: TextStyle(color: Color(0xFFAFAFAF),fontSize: 11),)),
-          )),
+          Expanded(child: Center(child: Text("বাং",style: TextStyle(color: Color(0xFFAFAFAF),fontSize: 11),))),
           Expanded(
             child: Container(
               height: 25,
