@@ -14,6 +14,7 @@ class LoginAndRegistrationTextField extends StatelessWidget {
     return Expanded(
       child: TextFormField(
         controller: controller,
+        cursorColor:    Theme.of(context).primaryColor,
         style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         keyboardType: TextInputType.phone,
         decoration: InputDecoration(

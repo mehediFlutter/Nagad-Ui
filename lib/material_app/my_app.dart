@@ -13,13 +13,7 @@ class MyApp extends StatelessWidget {
     
     
       
-      // theme: ThemeData(
-        
-        
-      //   primarySwatch:
-      //       MaterialColor(AppColors.primaryColor.value, AppColors().color),
-      //   useMaterial3: true,
-      // ),
+
       home: NagadHomeScreen(),
     );
   }
