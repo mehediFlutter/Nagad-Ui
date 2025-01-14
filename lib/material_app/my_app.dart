@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:nagad_ui/theme/theme.dart';
 import '../screen/nagad_home_screen.dart';
 
@@ -7,7 +8,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Nagad UI',
       theme: AppTheme.lightTheme,
     
