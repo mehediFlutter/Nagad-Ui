@@ -11,10 +11,6 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Nagad UI',
       theme: AppTheme.lightTheme,
-    
-    
-      
-
       home: NagadHomeScreen(),
     );
   }

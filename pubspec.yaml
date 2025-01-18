@@ -18,6 +18,7 @@ dependencies:
   flutter_svg: ^2.0.16
   google_fonts: ^6.2.1
   get: ^4.6.6
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +37,9 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/navigator_icon/
+    - assets/bottom_nav_icon/
+    - assets/service/
+    - assets/payment/
 
 
 

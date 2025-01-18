@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../re_usable_base_screen.dart';
+
 class MyNagadScreen extends StatefulWidget {
   const MyNagadScreen({super.key});
 
@@ -10,6 +12,10 @@ class MyNagadScreen extends StatefulWidget {
 class _MyNagadScreenState extends State<MyNagadScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ReUsableBaseScreen(
+      child: Column(
+        children: [Text("My Nagad Screen")],
+      ),
+    );
   }
 }

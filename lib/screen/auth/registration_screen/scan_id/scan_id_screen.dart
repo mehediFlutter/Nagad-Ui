@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nagad_ui/app_bar/custom_app_bar.dart';
+import 'package:nagad_ui/screen/widgets/app_bar/custom_app_bar.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_camera.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/scan_id/scan_id_line.dart';
 
 import '../../../../submit_bottom/submit_bottom.dart';
-import '../../../../widget/const.dart';
+import '../../../../data/getx_controller/const/const.dart';
 
 class ScanIdScreen extends StatefulWidget {
   const ScanIdScreen({super.key});

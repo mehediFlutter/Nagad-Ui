@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nagad_ui/screen/splash_screen.dart';
+import 'package:nagad_ui/screen/splash_screen/splash_screen.dart';
 
 class NagadHomeScreen extends StatefulWidget {
   const NagadHomeScreen({super.key});

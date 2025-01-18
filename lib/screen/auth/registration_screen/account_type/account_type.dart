@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nagad_ui/app_bar/custom_app_bar.dart';
+import 'package:nagad_ui/screen/widgets/app_bar/custom_app_bar.dart';
 import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 
-import '../../../../widget/const.dart';
+import '../../../../data/getx_controller/const/const.dart';
 import '../../../../widget/snack_bar/custom_snack_bar.dart';
 import '../scan_id/scan_id_screen.dart';
 

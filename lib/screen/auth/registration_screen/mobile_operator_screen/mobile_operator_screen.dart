@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:nagad_ui/app_bar/custom_app_bar.dart';
-import 'package:nagad_ui/widget/const.dart';
+import 'package:nagad_ui/screen/widgets/app_bar/custom_app_bar.dart';
+import 'package:nagad_ui/data/getx_controller/const/const.dart';
 
 import '../../../../submit_bottom/submit_bottom.dart';
 import '../account_type/account_type.dart';

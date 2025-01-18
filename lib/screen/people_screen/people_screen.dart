@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../re_usable_base_screen.dart';
+
 class PeopleScreen extends StatefulWidget {
   const PeopleScreen({super.key});
 
@@ -9,7 +11,11 @@ class PeopleScreen extends StatefulWidget {
 
 class _PeopleScreenState extends State<PeopleScreen> {
   @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
+   Widget build(BuildContext context) {
+    return ReUsableBaseScreen(
+      child: Column(
+        children: [Text("People Screen")],
+      ),
+    );
   }
 }

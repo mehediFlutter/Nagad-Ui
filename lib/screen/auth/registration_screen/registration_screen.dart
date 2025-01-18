@@ -3,9 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nagad_ui/screen/auth/login_screen/login_screen.dart';
 import 'package:nagad_ui/screen/auth/registration_screen/mobile_operator_screen/mobile_operator_screen.dart';
 
-import '../../../app_bar/custom_app_bar.dart';
+import '../../widgets/app_bar/custom_app_bar.dart';
 import '../../../submit_bottom/submit_bottom.dart';
-import '../../../widget/const.dart';
+import '../../../data/getx_controller/const/const.dart';
 import '../login_screen/login_registration_text_field.dart';
 
 class RegistrationScreen extends StatefulWidget {
