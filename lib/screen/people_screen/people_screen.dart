@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
+import 'package:nagad_ui/screen/people_screen/people_tab_screen/contact_people_screen.dart';
+import 'package:nagad_ui/screen/people_screen/people_tab_screen/save_merchant_screen.dart';
+import 'package:nagad_ui/screen/people_screen/people_tab_screen/save_uddokta_screen.dart';
 
 import '../re_usable_base_screen.dart';
+import 'people_screen_component/people_search_text_field.dart';
 
 class PeopleScreen extends StatefulWidget {
   const PeopleScreen({super.key});
@@ -67,18 +71,28 @@ class _PeopleScreenState extends State<PeopleScreen>
                         text: 'Contact',
                       ),
                       Tab(text: 'SAVED UDDOKTA'),
-Tab(
-        child: Text(
-          'SaveMerchant',
-          textAlign: TextAlign.center,
-          softWrap: true,
-          maxLines: 2,
-          style: TextStyle(fontSize: 12),
-        ),
-      ),
-                    ])
+                      Tab(
+                        child: Text(
+                          'SaveMerchant',
+                          textAlign: TextAlign.center,
+                          softWrap: true,
+                          maxLines: 2,
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ),
+                    ]),
               ],
             ),
+          ),
+          height10,
+          SearchContact(),
+          height20,
+          Expanded(
+            child: TabBarView(controller: _tabController, children: [
+              ContactPeopleScreen(),
+              SaveUddoktaScreen(),
+              SaveMerchantScreen()
+            ]),
           )
         ],
       ),
