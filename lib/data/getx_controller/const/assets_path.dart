@@ -7,7 +7,10 @@ const String icons               = '$assetPath/icons';
 // icon
 const String arrowBackSVG     = '$icons/back_arrow.svg';
 const String arrowForwardSVG  = '$icons/forward_arrow.svg';
-const String personIconSVG  = '$icons/person_icon.svg';
+const String personIconSVG    = '$icons/person_icon.svg';
+const String profileSVG       = '$icons/profile.svg';
+const String profilePNG       = '$icons/profilePNG.png';
+const String editSVG       = '$icons/editSVG.svg';
 
 // bottom_nav_icon
 const String homeSelectedSVG                  = '$bottomNavIconSVG/home_selected.svg';
@@ -41,3 +44,7 @@ const String billPaySVG         = '$service/nogod_mela.svg';
 const String merchantPaySVG     = '$service/merchant_pay.svg';
 const String donationSVG        = '$service/donation.svg';
 const String emiPaymentSVG      = '$service/emi_payment.svg';
+
+// Setting icon
+
+const String languageSVG        = '';

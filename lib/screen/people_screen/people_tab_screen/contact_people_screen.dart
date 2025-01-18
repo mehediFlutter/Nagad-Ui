@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
-import 'package:nagad_ui/screen/re_usable_base_screen.dart';
 
 import '../../../data/getx_controller/const/assets_path.dart';
 
