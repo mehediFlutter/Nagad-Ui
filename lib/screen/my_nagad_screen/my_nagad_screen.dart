@@ -4,6 +4,7 @@ import 'package:nagad_ui/data/getx_controller/const/assets_path.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
 
 import '../re_usable_base_screen.dart';
+import 'my_nagad_component/account_general_item.dart';
 
 class MyNagadScreen extends StatefulWidget {
   const MyNagadScreen({super.key});
@@ -86,14 +87,17 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                       .titleMedium!
                       .copyWith(color: Colors.grey),
                 ),
-                Row(
-                  children: [
-                    SvgPicture.asset(languageSVG),
-                    Text(
-                      'Language',
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                  ],
+                AccountGeneralItem(
+                  imagePath: languageSVG,
+                  text: 'Language',
+                  isText: true,
+                  trailingText: "English",
+                ),
+                AccountGeneralItem(
+                  imagePath: accountSVG,
+                  text: 'Account Type',
+                  isText: true,
+                  trailingText: "Regular",
                 ),
               ],
             ),
@@ -103,3 +107,4 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
     );
   }
 }
+
