@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nagad_ui/data/getx_controller/const/const.dart';
 import 'package:nagad_ui/screen/re_usable_base_screen.dart';
 
 import 'transaction_item.dart';
