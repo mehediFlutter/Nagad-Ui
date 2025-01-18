@@ -99,6 +99,12 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   isText: true,
                   trailingText: "Regular",
                 ),
+                AccountGeneralItem(
+                  imagePath: profitSVG,
+                  text: 'I Want Profit',
+                  isText: true,
+                  trailingText: "ON",
+                ),
               ],
             ),
           )

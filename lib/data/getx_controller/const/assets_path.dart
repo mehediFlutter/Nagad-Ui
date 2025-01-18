@@ -49,4 +49,6 @@ const String emiPaymentSVG      = '$service/emi_payment.svg';
 
 // Setting icon
 const String languageSVG        = '$settingIcon/language.svg';
-const String accountSVG        = '$settingIcon/account_type.svg';
+const String accountSVG         = '$settingIcon/account_type.svg';
+const String profitSVG          = '$settingIcon/profit.svg';
+const String changePinSVG          = '$settingIcon/change_pin.svg';
