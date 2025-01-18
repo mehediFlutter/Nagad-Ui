@@ -122,6 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             .copyWith(color: Color(0xFF6E6E6E)),
                       ),
                       height20,
+                      
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -139,6 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
+                      
                       height20,
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

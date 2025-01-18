@@ -5,8 +5,10 @@ const String service               = '$assetPath/service';
 const String icons               = '$assetPath/icons';
 
 // icon
-const String arrowBackSVG  = '$icons/back_arrow.svg';
+const String arrowBackSVG     = '$icons/back_arrow.svg';
 const String arrowForwardSVG  = '$icons/forward_arrow.svg';
+const String personIconSVG  = '$icons/person_icon.svg';
+
 // bottom_nav_icon
 const String homeSelectedSVG                  = '$bottomNavIconSVG/home_selected.svg';
 const String homeUnSelectedSVG                = '$bottomNavIconSVG/home_un_selected.svg';
@@ -21,7 +23,7 @@ const String myNagadUnSelectedSVG             = '$bottomNavIconSVG/my_nagad_un_s
 
 const String backgroundManSVG                 ='$images/nagad_background_man.svg';
 const String nagadTextSVG                     ='$images/nagad_text.svg';
-const String tamimImagePNG                     ='$images/big_image_tamim.png';
+const String tamimImagePNG                    ='$images/big_image_tamim.png';
 
 // services 
 
