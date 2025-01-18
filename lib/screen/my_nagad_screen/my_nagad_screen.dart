@@ -77,6 +77,7 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "General",
@@ -85,7 +86,15 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                       .titleMedium!
                       .copyWith(color: Colors.grey),
                 ),
-                
+                Row(
+                  children: [
+                    SvgPicture.asset(languageSVG),
+                    Text(
+                      'Language',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ],
+                ),
               ],
             ),
           )
