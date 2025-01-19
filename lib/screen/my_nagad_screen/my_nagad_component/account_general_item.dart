@@ -25,7 +25,7 @@ class AccountGeneralItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              SvgPicture.asset(languageSVG),
+              Image.asset(imagePath),
               width10,
               Text(
                 text,

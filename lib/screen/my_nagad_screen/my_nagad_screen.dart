@@ -88,22 +88,30 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                       .copyWith(color: Colors.grey),
                 ),
                 AccountGeneralItem(
-                  imagePath: languageSVG,
+                  imagePath: languagePNG,
                   text: 'Language',
                   isText: true,
                   trailingText: "English",
                 ),
                 AccountGeneralItem(
-                  imagePath: accountSVG,
+                  imagePath: languagePNG,
                   text: 'Account Type',
                   isText: true,
                   trailingText: "Regular",
                 ),
                 AccountGeneralItem(
-                  imagePath: profitSVG,
+                  imagePath: languagePNG,
                   text: 'I Want Profit',
                   isText: true,
                   trailingText: "ON",
+                ),
+                AccountGeneralItem(
+                  imagePath: languagePNG,
+                  text: 'Change PIN',
+                ),
+                AccountGeneralItem(
+                  imagePath: languagePNG,
+                  text: 'Change PIN',
                 ),
               ],
             ),
@@ -113,4 +121,3 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
     );
   }
 }
-
