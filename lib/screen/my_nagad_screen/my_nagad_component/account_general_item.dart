@@ -44,7 +44,10 @@ class AccountGeneralItem extends StatelessWidget {
             ],
           ),
           height5,
-          Divider()
+          Padding(
+            padding: const EdgeInsets.only(left: 32),
+            child: Divider(),
+          )
         ],
       ),
     );
