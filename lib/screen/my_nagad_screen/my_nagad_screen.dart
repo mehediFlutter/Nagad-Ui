@@ -136,6 +136,10 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   imagePath: privacyPolicyPNG,
                   text: 'Privacy Policy',
                 ),
+                AccountGeneralItem(
+                  imagePath: faqPNG,
+                  text: 'FAQ',
+                ),
 
               ],
             ),
