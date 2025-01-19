@@ -126,35 +126,36 @@ class _HomeScreenState extends State<HomeScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
+                        
                           ServicesItem(
-                            imagePath: sendMoneySVG,
+                            imagePath: cashOutPNG,
                             serviceName: 'Cash Out',
                           ),
                           ServicesItem(
-                            imagePath: rechargeSVG,
+                            imagePath: rechargePNG,
                             serviceName: 'Money Recharge',
                           ),
                           ServicesItem(
-                            imagePath: addMoneySVG,
+                            imagePath: addMoneyPNG,
                             serviceName: 'Add Money',
                           ),
                         ],
                       ),
                       
-                      height20,
+                      height10,
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ServicesItem(
-                            imagePath: transferSVG,
+                            imagePath: transferPNG,
                             serviceName: 'Transfer Money',
                           ),
                           ServicesItem(
-                            imagePath: insuranceSVG,
+                            imagePath: insurancePNG,
                             serviceName: 'Insurance',
                           ),
                           ServicesItem(
-                            imagePath: nagodMelaSVG,
+                            imagePath: nagodMelaPNG,
                             serviceName: 'Nagad Mela',
                           ),
                         ],
@@ -184,7 +185,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             serviceName: 'Bill Pay',
                           ),
                           ServicesItem(
-                            imagePath: nagodMelaSVG,
+                            imagePath: nagodMela,
                             serviceName: 'EMI Payment',
                           ),
                           ServicesItem(

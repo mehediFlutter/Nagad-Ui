@@ -12,6 +12,7 @@ class ServicesItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.sizeOf(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -26,11 +27,14 @@ class ServicesItem extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 10),
-          child: Text(
-            serviceName,
-            style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                  color: Color(0XFF6E6E6E),
-                ),
+          child: SizedBox(
+           width: size.width/5.6,
+            child: Text(
+              serviceName,
+              style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                    color: Color(0XFF6E6E6E),
+                  ),
+            ),
           ),
         )
       ],
