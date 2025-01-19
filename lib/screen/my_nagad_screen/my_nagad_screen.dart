@@ -121,13 +121,22 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   imagePath: trustedMerchantPNG,
                   text: 'Trusted Merchants',
                 ),
-                 Text(
-                  "More Information",
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium!
-                      .copyWith(color: Colors.grey),
+
+                 Padding(
+                   padding: const EdgeInsets.symmetric(vertical: 8),
+                   child: Text(
+                    "More Information",
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleMedium!
+                        .copyWith(color: Colors.grey),
+                                   ),
+                 ),
+                AccountGeneralItem(
+                  imagePath: privacyPolicyPNG,
+                  text: 'Privacy Policy',
                 ),
+
               ],
             ),
           )
