@@ -35,7 +35,7 @@ const String cashOutPNG                        = '$service/cash_out.png';
 const String rechargePNG                         = '$service/mobile_recharge.png';
 const String addMoneyPNG                         = '$service/add_money.png';
 const String transferPNG                         = '$service/money_transfer.png';
-const String insuranceSVG                        = '$service/insurance.svg';
+const String insurancePNG                        = '$service/insurance.png';
 const String nagodMelaSVG                        = '$service/nogod_mela.svg';
 
 
