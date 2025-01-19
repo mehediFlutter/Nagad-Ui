@@ -78,7 +78,7 @@ class _TransferMoneyScreenState extends State<TransferMoneyScreen> {
                           .textTheme
                           .titleMedium!
                           .copyWith(fontWeight: FontWeight.w900, fontSize: 18),
-                    )
+                    ),
                   ],
                 ),
                 height20,
