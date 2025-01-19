@@ -41,7 +41,7 @@ const String nagodMelaPNG                        = '$service/nagad_mela.png';
 
 // Payment
 
-const String billPaySVG         = '$service/nogod_mela.svg';
+const String billPayPNG         = '$service/bill_pay.png';
 const String merchantPayPNG     = '$service/merchant_pay.png';
 const String donationSVG        = '$service/donation.svg';
 const String emiPaymentSVG      = '$service/emi_payment.svg';
