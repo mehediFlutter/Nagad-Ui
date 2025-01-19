@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
 import 'package:nagad_ui/data/getx_controller/demo_http.dart';
 import 'package:nagad_ui/screen/re_usable_base_screen.dart';
+import 'package:nagad_ui/screen/transfer_money_screen/transfer_money_screen.dart';
 
 import '../../data/getx_controller/const/assets_path.dart';
 import 'home_screen_component/service_item.dart';
@@ -97,7 +98,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                       .copyWith(
                                           fontSize: 12,
                                           fontWeight: FontWeight.bold,
-                                          color: Theme.of(context).primaryColor),
+                                          color:
+                                              Theme.of(context).primaryColor),
                                 )
                               ],
                             ),
@@ -109,7 +111,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -121,42 +124,47 @@ class _HomeScreenState extends State<HomeScreen> {
                             .titleMedium!
                             .copyWith(color: Color(0xFF6E6E6E)),
                       ),
-                      height20,
-                      
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                        
-                          ServicesItem(
-                            imagePath: cashOutPNG,
-                            serviceName: 'Cash Out',
-                          ),
-                          ServicesItem(
-                            imagePath: rechargePNG,
-                            serviceName: 'Money Recharge',
-                          ),
-                          ServicesItem(
-                            imagePath: addMoneyPNG,
-                            serviceName: 'Add Money',
-                          ),
-                        ],
-                      ),
-                      
                       height10,
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ServicesItem(
-                            imagePath: transferPNG,
-                            serviceName: 'Transfer Money',
+                            imagePath: cashOutPNG,
+                            serviceName: 'Cash Out',
+                            onTap: () {},
                           ),
+                          ServicesItem(
+                            imagePath: rechargePNG,
+                            serviceName: 'Money Recharge',
+                            onTap: () {},
+                          ),
+                          ServicesItem(
+                            imagePath: addMoneyPNG,
+                            serviceName: 'Add Money',
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                      height10,
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ServicesItem(
+                              imagePath: transferPNG,
+                              serviceName: 'Transfer Money',
+                              onTap: () {
+                               Get.to(TransferMoneyScreen());
+                              }),
                           ServicesItem(
                             imagePath: insurancePNG,
                             serviceName: 'Insurance',
+                            onTap: () {},
                           ),
                           ServicesItem(
                             imagePath: nagodMelaPNG,
                             serviceName: 'Nagad Mela',
+                            onTap: () {},
                           ),
                         ],
                       ),
@@ -174,28 +182,40 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 12,
                       ),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           ServicesItem(
-                            imagePath: merchantPaySVG,
+                            imagePath: merchantPayPNG,
                             serviceName: 'Merchant Pay',
+                            onTap: () {},
                           ),
                           ServicesItem(
-                            imagePath: billPaySVG,
+                            imagePath: billPayPNG,
                             serviceName: 'Bill Pay',
+                            onTap: () {},
                           ),
                           ServicesItem(
-                            imagePath: nagodMela,
+                            imagePath: emiPaymentPNG,
                             serviceName: 'EMI Payment',
+                            onTap: () {},
                           ),
                           ServicesItem(
-                            imagePath: donationSVG,
+                            imagePath: donationPNG,
                             serviceName: 'Donation',
+                            onTap: () {},
                           ),
                         ],
                       ),
                       height20,
-                   Image.asset(tamimImagePNG),
+                      SizedBox(
+                        width: double.infinity,
+                        child: Image.asset(
+                          tamimImagePNG,
+                          fit: BoxFit
+                              .cover, // Ensures the image covers the full width
+                        ),
+                      ),
                     ],
                   ),
                 ),

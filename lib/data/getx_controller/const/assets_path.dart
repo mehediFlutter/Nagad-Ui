@@ -2,6 +2,7 @@ const String assetPath            = 'assets';
 const String bottomNavIconSVG     = '$assetPath/bottom_nav_icon';
 const String images               = '$assetPath/images';
 const String service              = '$assetPath/service';
+const String payment              = '$assetPath/payment';
 const String icons                = '$assetPath/icons';
 const String settingIcon          = '$assetPath/setting_icon';
 
@@ -41,10 +42,10 @@ const String nagodMelaPNG                        = '$service/nagad_mela.png';
 
 // Payment
 
-const String billPayPNG         = '$service/bill_pay.png';
-const String merchantPayPNG     = '$service/merchant_pay.png';
-const String donationPNG        = '$service/donation.png';
-const String emiPaymentPNG      = '$service/emi_payment.png';
+const String billPayPNG         = '$payment/bill_pay.png';
+const String merchantPayPNG     = '$payment/merchant_pay.png';
+const String donationPNG        = '$payment/donation.png';
+const String emiPaymentPNG      = '$payment/emi_payment.png';
 
 
 // Setting icon
