@@ -8,7 +8,6 @@ class AmountTextFieldController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    // Listen for changes in the TextEditingController
     amountController.addListener(() {
       isEnableButton.value = amountController.text.isNotEmpty;
     });

@@ -24,6 +24,12 @@ class TransferTextFieldWithPinTextField extends StatelessWidget {
           focusedBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: Colors.black)),
         ),
+        validator: (value) {
+          if(value?.isEmpty??true){
+            return 'Enter PIN';
+          }
+          return null;
+        },
       ),
     );
   }
