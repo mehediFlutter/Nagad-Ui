@@ -52,3 +52,4 @@ const String languagePNG        = '$settingIcon/language.png';
 const String accountTypePNG     = '$settingIcon/setting.png';
 const String profitPNG          = '$settingIcon/profit.png';
 const String changePinPNG       = '$settingIcon/changePIN.png';
+const String towerPNG           = '$settingIcon/tower.png';

@@ -110,8 +110,12 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   text: 'Change PIN',
                 ),
                 AccountGeneralItem(
-                  imagePath: languagePNG,
-                  text: 'Change PIN',
+                  imagePath: towerPNG,
+                  text: 'Change Mobile Operator',
+                ),
+                AccountGeneralItem(
+                  imagePath: towerPNG,
+                  text: 'Change Mobile Operator',
                 ),
               ],
             ),
