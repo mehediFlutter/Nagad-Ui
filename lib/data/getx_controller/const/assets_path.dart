@@ -32,9 +32,9 @@ const String tamimImagePNG                    ='$images/big_image_tamim.png';
 // services 
 
 const String cashOutPNG                        = '$service/cash_out.png';
-const String rechargeSVG                         = '$service/recharge.svg';
-const String addMoneySVG                         = '$service/add_money.svg';
-const String transferSVG                         = '$service/money_transfer.svg';
+const String rechargePNG                         = '$service/mobile_recharge.png';
+const String addMoneyPNG                         = '$service/add_money.png';
+const String transferPNG                         = '$service/money_transfer.png';
 const String insuranceSVG                        = '$service/insurance.svg';
 const String nagodMelaSVG                        = '$service/nogod_mela.svg';
 
