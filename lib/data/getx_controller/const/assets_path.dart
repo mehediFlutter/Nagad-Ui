@@ -13,6 +13,7 @@ const String personIconSVG    = '$icons/person_icon.svg';
 const String profileSVG       = '$icons/profile.svg';
 const String profilePNG       = '$icons/profilePNG.png';
 const String editSVG          = '$icons/editSVG.svg';
+const String lockPNG          = '$icons/lock.png';
 
 // bottom_nav_icon
 const String homeSelectedSVG                  = '$bottomNavIconSVG/home_selected.svg';

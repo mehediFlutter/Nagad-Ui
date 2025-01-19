@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 
 class CardTypeAndCardNumber extends StatelessWidget {
+  final String visaDebitOrAmount;
+  final String cardTypeOrAmount;
+  final String cardNumberOrTaka;
+  final String cardNumberOrCharge;
   const CardTypeAndCardNumber({
     super.key,
+    required this.visaDebitOrAmount,
+    required this.cardTypeOrAmount,
+    required this.cardNumberOrTaka,
+    required this.cardNumberOrCharge,
   });
 
   @override
   Widget build(BuildContext context) {
     return Material(
       elevation: 2,
-       borderRadius: BorderRadius.circular(12),
+      borderRadius: BorderRadius.circular(12),
       child: Container(
         height: 80,
         width: double.infinity,
-        decoration:
-            BoxDecoration(borderRadius: BorderRadius.circular(12)),
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -22,20 +29,32 @@ class CardTypeAndCardNumber extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Visa Debit",
+                  visaDebitOrAmount,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                Text("Card Type",style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Colors.red),)
+                Text(
+                  cardTypeOrAmount,
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleMedium!
+                      .copyWith(color: Colors.red),
+                )
               ],
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "1547854234",
+                  cardNumberOrTaka,
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
-                Text("Card Number",style: Theme.of(context).textTheme.titleMedium!.copyWith(color: Colors.red),)
+                Text(
+                cardNumberOrCharge,
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleMedium!
+                      .copyWith(color: Colors.red),
+                )
               ],
             )
           ],

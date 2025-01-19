@@ -9,6 +9,7 @@ import '../../submit_bottom/submit_bottom.dart';
 import 'transfer_money_component/amount_text_field.dart';
 import 'transfer_money_component/card_type_card_number.dart';
 import 'transfer_money_component/visa_debit_card.dart';
+import 'transfer_money_screen_with_pin/transfer_money_with_pin.dart';
 
 class TransferMoneyScreen extends StatefulWidget {
   const TransferMoneyScreen({super.key});
@@ -49,7 +50,12 @@ class _TransferMoneyScreenState extends State<TransferMoneyScreen> {
                 height20,
                 VisaDebitCard(),
                 height20,
-                CardTypeAndCardNumber(),
+                CardTypeAndCardNumber(
+                  visaDebitOrAmount: 'Visa Debit',
+                  cardTypeOrAmount: 'Card Type',
+                  cardNumberOrCharge: '54561215',
+                  cardNumberOrTaka: 'Card Number',
+                ),
                 height20,
                 Text(
                   "Amount",
@@ -91,6 +97,7 @@ class _TransferMoneyScreenState extends State<TransferMoneyScreen> {
                         if (!formKey.currentState!.validate()) {
                           return;
                         }
+                        Get.to(TransferMoneyWithPin());
                         if (kDebugMode) {
                           print("Submit button pressed");
                         }
