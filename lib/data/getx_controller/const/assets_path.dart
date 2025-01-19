@@ -51,3 +51,4 @@ const String emiPaymentSVG      = '$service/emi_payment.svg';
 const String languagePNG        = '$settingIcon/language.png';
 const String accountTypePNG     = '$settingIcon/setting.png';
 const String profitPNG          = '$settingIcon/profit.png';
+const String changePinPNG       = '$settingIcon/changePIN.png';

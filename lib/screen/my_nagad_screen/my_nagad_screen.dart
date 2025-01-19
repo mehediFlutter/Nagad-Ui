@@ -106,7 +106,7 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   trailingText: "ON",
                 ),
                 AccountGeneralItem(
-                  imagePath: languagePNG,
+                  imagePath: changePinPNG,
                   text: 'Change PIN',
                 ),
                 AccountGeneralItem(
