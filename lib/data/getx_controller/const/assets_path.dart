@@ -29,6 +29,7 @@ const String myNagadUnSelectedSVG             = '$bottomNavIconSVG/my_nagad_un_s
 const String backgroundManSVG                 ='$images/nagad_background_man.svg';
 const String nagadTextSVG                     ='$images/nagad_text.svg';
 const String tamimImagePNG                    ='$images/big_image_tamim.png';
+const String visaPNG                          ='$images/visa.png';
 
 // services 
 
