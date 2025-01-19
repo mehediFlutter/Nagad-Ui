@@ -94,13 +94,13 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   trailingText: "English",
                 ),
                 AccountGeneralItem(
-                  imagePath: languagePNG,
+                  imagePath: accountTypePNG,
                   text: 'Account Type',
                   isText: true,
                   trailingText: "Regular",
                 ),
                 AccountGeneralItem(
-                  imagePath: languagePNG,
+                  imagePath: profitPNG,
                   text: 'I Want Profit',
                   isText: true,
                   trailingText: "ON",
