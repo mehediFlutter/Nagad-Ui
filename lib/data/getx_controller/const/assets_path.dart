@@ -53,3 +53,4 @@ const String accountTypePNG     = '$settingIcon/setting.png';
 const String profitPNG          = '$settingIcon/profit.png';
 const String changePinPNG       = '$settingIcon/changePIN.png';
 const String towerPNG           = '$settingIcon/tower.png';
+const String reSubmitKycPNG     = '$settingIcon/re_submit_kyc.png';

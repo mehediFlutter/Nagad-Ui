@@ -114,8 +114,8 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   text: 'Change Mobile Operator',
                 ),
                 AccountGeneralItem(
-                  imagePath: towerPNG,
-                  text: 'Change Mobile Operator',
+                  imagePath: reSubmitKycPNG,
+                  text: 'Re-Submit KYC',
                 ),
               ],
             ),
