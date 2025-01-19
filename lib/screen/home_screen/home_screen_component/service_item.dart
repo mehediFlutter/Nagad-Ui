@@ -22,7 +22,7 @@ class ServicesItem extends StatelessWidget {
           decoration: BoxDecoration(
               color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.circular(17)),
-          child: SvgPicture.asset(imagePath),
+          child: Image.asset(imagePath),
         ),
         Padding(
           padding: const EdgeInsets.only(top: 10),

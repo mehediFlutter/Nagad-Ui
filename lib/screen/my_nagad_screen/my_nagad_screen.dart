@@ -145,6 +145,10 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                     imagePath: locatorPNG,
                     text: 'Store Locator',
                   ),
+                  AccountGeneralItem(
+                    imagePath: aboutPNG,
+                    text: 'About',
+                  ),
         
                 ],
               ),
