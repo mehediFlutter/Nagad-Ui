@@ -43,8 +43,8 @@ const String nagodMelaPNG                        = '$service/nagad_mela.png';
 
 const String billPayPNG         = '$service/bill_pay.png';
 const String merchantPayPNG     = '$service/merchant_pay.png';
-const String donationSVG        = '$service/donation.svg';
-const String emiPaymentSVG      = '$service/emi_payment.svg';
+const String donationPNG        = '$service/donation.png';
+const String emiPaymentPNG      = '$service/emi_payment.png';
 
 
 // Setting icon
