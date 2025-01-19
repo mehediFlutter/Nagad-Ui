@@ -57,3 +57,5 @@ const String reSubmitKycPNG     = '$settingIcon/re_submit_kyc.png';
 const String trustedMerchantPNG = '$settingIcon/trusted_merchant.png';
 const String privacyPolicyPNG   = '$settingIcon/privacy_policy.png';
 const String faqPNG             = '$settingIcon/faq.png';
+const String locatorPNG         = '$settingIcon/locator.png';
+const String aboutPNG         = '$settingIcon/about.png';

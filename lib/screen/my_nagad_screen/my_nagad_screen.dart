@@ -17,134 +17,140 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
   @override
   Widget build(BuildContext context) {
     return ReUsableBaseScreen(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            height: 150,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFFD7E49),
-                  Color(0xFFFB7345),
-                  Color(0xFFF6593D),
-                  Color(0xFFF44E39),
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              height: 150,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Color(0xFFFD7E49),
+                    Color(0xFFFB7345),
+                    Color(0xFFF6593D),
+                    Color(0xFFF44E39),
+                  ],
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  height20,
+                  Text("My Nagad",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge!
+                          .copyWith(color: Colors.white, fontSize: 18)),
+                  height20,
+                  Row(
+                    children: [
+                      Image.asset(profilePNG),
+                      width20,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Mehedi Hassan',
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(color: Colors.white),
+                          ),
+                          Text(
+                            "01639-483485",
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleMedium!
+                                .copyWith(color: Colors.white, fontSize: 12),
+                          )
+                        ],
+                      ),
+                      Spacer(),
+                      SvgPicture.asset(editSVG)
+                    ],
+                  )
                 ],
               ),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                height20,
-                Text("My Nagad",
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleLarge!
-                        .copyWith(color: Colors.white, fontSize: 18)),
-                height20,
-                Row(
-                  children: [
-                    Image.asset(profilePNG),
-                    width20,
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Mehedi Hassan',
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleLarge!
-                              .copyWith(color: Colors.white),
-                        ),
-                        Text(
-                          "01639-483485",
-                          style: Theme.of(context)
-                              .textTheme
-                              .titleMedium!
-                              .copyWith(color: Colors.white, fontSize: 12),
-                        )
-                      ],
-                    ),
-                    Spacer(),
-                    SvgPicture.asset(editSVG)
-                  ],
-                )
-              ],
-            ),
-          ),
-          height20,
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "General",
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium!
-                      .copyWith(color: Colors.grey),
-                ),
-                AccountGeneralItem(
-                  imagePath: languagePNG,
-                  text: 'Language',
-                  isText: true,
-                  trailingText: "English",
-                ),
-                AccountGeneralItem(
-                  imagePath: accountTypePNG,
-                  text: 'Account Type',
-                  isText: true,
-                  trailingText: "Regular",
-                ),
-                AccountGeneralItem(
-                  imagePath: profitPNG,
-                  text: 'I Want Profit',
-                  isText: true,
-                  trailingText: "ON",
-                ),
-                AccountGeneralItem(
-                  imagePath: changePinPNG,
-                  text: 'Change PIN',
-                ),
-                AccountGeneralItem(
-                  imagePath: towerPNG,
-                  text: 'Change Mobile Operator',
-                ),
-                AccountGeneralItem(
-                  imagePath: reSubmitKycPNG,
-                  text: 'Re-Submit KYC',
-                ),
-                AccountGeneralItem(
-                  imagePath: trustedMerchantPNG,
-                  text: 'Trusted Merchants',
-                ),
-
-                 Padding(
-                   padding: const EdgeInsets.symmetric(vertical: 8),
-                   child: Text(
-                    "More Information",
+            height20,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "General",
                     style: Theme.of(context)
                         .textTheme
                         .titleMedium!
                         .copyWith(color: Colors.grey),
-                                   ),
-                 ),
-                AccountGeneralItem(
-                  imagePath: privacyPolicyPNG,
-                  text: 'Privacy Policy',
-                ),
-                AccountGeneralItem(
-                  imagePath: faqPNG,
-                  text: 'FAQ',
-                ),
-
-              ],
-            ),
-          )
-        ],
+                  ),
+                  AccountGeneralItem(
+                    imagePath: languagePNG,
+                    text: 'Language',
+                    isText: true,
+                    trailingText: "English",
+                  ),
+                  AccountGeneralItem(
+                    imagePath: accountTypePNG,
+                    text: 'Account Type',
+                    isText: true,
+                    trailingText: "Regular",
+                  ),
+                  AccountGeneralItem(
+                    imagePath: profitPNG,
+                    text: 'I Want Profit',
+                    isText: true,
+                    trailingText: "ON",
+                  ),
+                  AccountGeneralItem(
+                    imagePath: changePinPNG,
+                    text: 'Change PIN',
+                  ),
+                  AccountGeneralItem(
+                    imagePath: towerPNG,
+                    text: 'Change Mobile Operator',
+                  ),
+                  AccountGeneralItem(
+                    imagePath: reSubmitKycPNG,
+                    text: 'Re-Submit KYC',
+                  ),
+                  AccountGeneralItem(
+                    imagePath: trustedMerchantPNG,
+                    text: 'Trusted Merchants',
+                  ),
+        
+                   Padding(
+                     padding: const EdgeInsets.symmetric(vertical: 8),
+                     child: Text(
+                      "More Information",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleMedium!
+                          .copyWith(color: Colors.grey),
+                                     ),
+                   ),
+                  AccountGeneralItem(
+                    imagePath: privacyPolicyPNG,
+                    text: 'Privacy Policy',
+                  ),
+                  AccountGeneralItem(
+                    imagePath: faqPNG,
+                    text: 'FAQ',
+                  ),
+                  AccountGeneralItem(
+                    imagePath: locatorPNG,
+                    text: 'Store Locator',
+                  ),
+        
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
