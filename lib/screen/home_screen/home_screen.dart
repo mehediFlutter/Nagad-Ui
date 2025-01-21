@@ -3,6 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
 import 'package:nagad_ui/data/getx_controller/demo_http.dart';
+import 'package:nagad_ui/data/getx_controller/model/network_response.dart';
+import 'package:nagad_ui/data/network_caller/api_controller.dart';
+import 'package:nagad_ui/data/network_caller/network_caller.dart';
 import 'package:nagad_ui/screen/re_usable_base_screen.dart';
 import 'package:nagad_ui/screen/transfer_money_screen/transfer_money_screen.dart';
 
@@ -18,10 +21,25 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   DemoHttpController demoHttpController = Get.put(DemoHttpController());
+  NetworkCaller networkCaller = NetworkCaller();
+  ApiController apiController = Get.put(ApiController());
+
+  List? myData = [];
+
+  fetchData() async {
+    NetworkResponse response = await networkCaller.getRequest(
+        "");
+   
+    myData = response.body;
+    if (mounted) {
+      setState(() {});
+    }
+  }
 
   @override
   void initState() {
     print("Init state");
+     fetchData();
 
     // demoHttpController.fetchData(
     //     );
@@ -30,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    print("Get Data : $myData");
     return ReUsableBaseScreen(
       child: SizedBox(
         width: double.infinity,
@@ -154,7 +173,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               imagePath: transferPNG,
                               serviceName: 'Transfer Money',
                               onTap: () {
-                               Get.to(TransferMoneyScreen());
+                                Get.to(TransferMoneyScreen());
                               }),
                           ServicesItem(
                             imagePath: insurancePNG,

@@ -7,6 +7,7 @@ import 'package:nagad_ui/submit_bottom/submit_bottom.dart';
 import '../../../data/getx_controller/const/const.dart';
 import '../../../data/getx_controller/transfer_pin_controller.dart';
 import '../../widgets/app_bar/custom_app_bar.dart';
+import '../tap_to_send_screen/tap_to_send_screen.dart';
 import '../transfer_money_component/card_type_card_number.dart';
 import '../transfer_money_component/visa_debit_card.dart';
 import 'pin_text_field.dart';
@@ -60,7 +61,7 @@ class _TransferMoneyWithPinState extends State<TransferMoneyWithPin> {
                           if(!formKey.currentState!.validate()){
                             return;
                           }
-                          // Get.to();
+                           Get.to(TapToSendScreen());
                         },
                         text: "Next".toUpperCase());
                   })

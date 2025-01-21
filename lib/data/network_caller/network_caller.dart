@@ -9,11 +9,7 @@ class NetworkCaller {
       var response = await http.get(
         Uri.parse(url),
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Accept-Encoding': 'application/gzip',
-          'Authorization':
-              'Bearer 01jhrcdeytzqqqc422dxrt87ya|OrvNo4dz146tcgol43mf3Iga4EzfWWvhNkVHNEOX5cd6e320'
+        
         },
       );
       if (response.statusCode == 200) {
