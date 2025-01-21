@@ -47,7 +47,19 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                   height20,
                   Row(
                     children: [
-                      Image.asset(profilePNG),
+                      Container(
+                        decoration: BoxDecoration(shape: BoxShape.circle),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(50),
+                          child: Image.asset(
+                            profilePNG,
+                            height: 50,
+                            width: 50,
+                            fit: BoxFit
+                                .cover, // Ensures the image fits its container
+                          ),
+                        ),
+                      ),
                       width20,
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,17 +134,16 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                     imagePath: trustedMerchantPNG,
                     text: 'Trusted Merchants',
                   ),
-        
-                   Padding(
-                     padding: const EdgeInsets.symmetric(vertical: 8),
-                     child: Text(
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    child: Text(
                       "More Information",
                       style: Theme.of(context)
                           .textTheme
                           .titleMedium!
                           .copyWith(color: Colors.grey),
-                                     ),
-                   ),
+                    ),
+                  ),
                   AccountGeneralItem(
                     imagePath: privacyPolicyPNG,
                     text: 'Privacy Policy',
@@ -149,7 +160,6 @@ class _MyNagadScreenState extends State<MyNagadScreen> {
                     imagePath: aboutPNG,
                     text: 'About',
                   ),
-        
                 ],
               ),
             )

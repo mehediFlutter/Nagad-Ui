@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
-import 'package:nagad_ui/data/getx_controller/model/network_response.dart';
+import 'package:nagad_ui/data/network_caller/network_response.dart';
 
 class NetworkCaller {
   // Get Request
@@ -26,7 +26,6 @@ class NetworkCaller {
             body: jsonDecode(response.body));
       }
     } catch (e) {
-      print(e.toString());
     }
     return NetworkResponse(isSuccess: false, statusCode: -1, body: null);
   }

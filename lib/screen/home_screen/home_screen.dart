@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:nagad_ui/data/getx_controller/const/const.dart';
-import 'package:nagad_ui/data/getx_controller/demo_http.dart';
-import 'package:nagad_ui/data/getx_controller/model/network_response.dart';
+import 'package:nagad_ui/data/network_caller/demo_http.dart';
+import 'package:nagad_ui/data/network_caller/network_response.dart';
 import 'package:nagad_ui/data/network_caller/api_controller.dart';
 import 'package:nagad_ui/data/network_caller/network_caller.dart';
 import 'package:nagad_ui/screen/re_usable_base_screen.dart';
@@ -38,7 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
-    print("Init state");
      fetchData();
 
     // demoHttpController.fetchData(

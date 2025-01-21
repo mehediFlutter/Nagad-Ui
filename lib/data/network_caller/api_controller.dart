@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 import 'package:nagad_ui/Network_API/network_caller.dart';
-import 'package:nagad_ui/data/getx_controller/model/network_response.dart';
+import 'package:nagad_ui/data/network_caller/network_response.dart';
 
 class ApiController extends GetxController {
   NetworkCaller networkCaller = NetworkCaller();
@@ -13,7 +13,6 @@ class ApiController extends GetxController {
     if (response.isSuccess) {
       data?.value = response.body;
       isLoading.value = false;
-      print(data);
     }
     isLoading.value = false;
   }

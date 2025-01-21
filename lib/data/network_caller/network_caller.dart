@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:nagad_ui/data/getx_controller/model/network_response.dart';
+import 'package:nagad_ui/data/network_caller/network_response.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkCaller {
@@ -22,7 +22,6 @@ class NetworkCaller {
             isSuccess: false, statusCode: response.statusCode, body: null);
       }
     } catch (e) {
-      print(e.toString());
     }
     return NetworkResponse(isSuccess: false, statusCode: -1, body: null);
   }

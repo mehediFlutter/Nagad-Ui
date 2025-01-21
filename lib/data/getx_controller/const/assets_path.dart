@@ -11,9 +11,10 @@ const String arrowBackSVG     = '$icons/back_arrow.svg';
 const String arrowForwardSVG  = '$icons/forward_arrow.svg';
 const String personIconSVG    = '$icons/person_icon.svg';
 const String profileSVG       = '$icons/profile.svg';
-const String profilePNG       = '$icons/profilePNG.png';
+const String profilePNG       = '$icons/my_image.JPG';
 const String editSVG          = '$icons/editSVG.svg';
 const String lockPNG          = '$icons/lock.png';
+const String tabToSendPNG     = '$icons/tap_to_send.png';
 
 // bottom_nav_icon
 const String homeSelectedSVG                  = '$bottomNavIconSVG/home_selected.svg';
